@@ -10,3 +10,9 @@ function timedSuccessMessage(){
 function deleteTimedMessage(){
     showSection.innerHTML = '';
 }
+
+function showInverted(){
+    for(let i=inventory._array.length-1; i>=0; i--){
+        showSection.innerHTML +=JSON.stringify(inventory.presentList(i)) + '<br>';
+    }
+}
